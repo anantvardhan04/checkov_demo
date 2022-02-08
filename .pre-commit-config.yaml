@@ -1,0 +1,5 @@
+- repo: https://github.com/bridgecrewio/checkov.git
+  rev: '2.0.803' # change to tag or sha
+  hooks:
+    - id: checkov
+      args: [--external-checks-dir, 'custom_checks', --check, CUSTOM_AWS_1, --check, CUSTOM_AWS_2]
