@@ -5,8 +5,8 @@ from checkov.terraform.checks.resource.base_resource_check import BaseResourceCh
 
 class InstanceSizeLimit(BaseResourceCheck):
     def __init__(self):
-        name = "Selected Instance size not allowed."
-        id = "CUSTOM_AWS_2"
+        name = "VF Compliance Error: Selected Instance size not allowed. Either reduce the instance size or add valid Business Reason for skipping this Scan."
+        id = "VF_AWS_2"
         supported_resources = ['aws_instance']
         categories = [CheckCategories.GENERAL_SECURITY]
         super().__init__(name=name, id=id, categories=categories, supported_resources=supported_resources)
