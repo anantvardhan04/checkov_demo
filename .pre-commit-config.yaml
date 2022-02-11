@@ -2,4 +2,4 @@
   rev: '2.0.803' # change to tag or sha
   hooks:
     - id: checkov
-      args: [--external-checks-dir, 'custom_checks', --check, CUSTOM_AWS_1, --check, CUSTOM_AWS_2]
+      args: [--external-checks-dir, 'custom_checks', --check, VF_AWS_1, --check, VF_AWS_2]
